@@ -11,10 +11,10 @@ from sklearn.metrics import classification_report, confusion_matrix
 
 #load data
 url = "https://raw.githubusercontent.com/4GeeksAcademy/NLP-project-tutorial/main/url_spam.csv"
-df_raw = pd.read_csv(url)
+df = pd.read_csv(url)
 
 #drop duplicates
-df_raw = df_raw.drop_duplicates().reset_index(drop = True)
+df = df.drop_duplicates().reset_index(drop = True)
 
 #fuction to remove stopwords
 stopWord = ['is','you','your','and', 'the', 'to', 'from', 'or', 'I', 'for', 'do', 'get', 'not', 'here', 'in', 'im', 'have', 'on',
